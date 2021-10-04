@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>One Minute Maths</title>
+    <meta name="description" content="A simple app to test children on their maths">
+    <link rel="stylesheet" href="/css/pico.min.css">
+
+    <link rel="stylesheet" href="/css/custom.css">
+</head>
+
+<body>
+
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>One Minute Maths</strong></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <article class="grid" id="user-identification">
+            <div>
+                <hgroup>
+                    <h1>Sign in</h1>
+                    <h2>A quick test of your mathematical abilities</h2>
+                </hgroup>
+                <form>
+                    <input type="text" id="first-name" placeholder="First Name" aria-label="First Name" required>
+                    <input type="text" id="last-name" placeholder="Last Name" aria-label="First Name" required>
+                    <input type="text" id="grade" placeholder="Grade" aria-label="Grade" required>
+                    <fieldset>
+                        <label for="remember">
+                            <input type="checkbox" role="switch" id="remember" name="remember">
+                            Remember me
+                        </label>
+                    </fieldset>
+                    <button class="contrast" id="start">Start</button>
+                </form>
+            </div>
+            <div class="hero"></div>
+        </article>
+
+        <article class="grid" id="menu" style="display: none">
+            <div>
+                <hgroup>
+                    <h1>Choose Activity</h1>
+                </hgroup>
+
+                <div class="grid">
+                    <div><button title="Addition" id="addition">&plus;</button></div>
+                    <div><button title="Subtraction" id="subtraction">&minus;</button></div>
+                    <div><button title="Multiplication" id="multiplication">&times;</button></div>
+                    <div><button title="Division" id="division">&divide;</button></div>
+                </div>
+
+                <p>
+                    Once you choose an activity you will be given 60 seconds to answer 33 questions. Enter the answer to each question in turn and press either <strong>Enter</strong> or <strong>Tab</strong> to move to the next question.
+                </p>
+            </div>
+        </article>
+
+        <article class="grid" id="test" style="display: none">
+            <div>
+                <hgroup>
+                    <h1 id="activity"></h1>
+                </hgroup>
+
+                <ul id="questions">
+                </ul>
+            </div>
+        </article>
+
+
+        <article class="grid" id="finished" style="display: none">
+            <div>
+                <hgroup>
+                    <h1>Finsihed</h1>
+                </hgroup>
+
+                <button>Click here to do another test</button>
+            </div>
+        </article>
+    </main>
+
+    <footer class="container-fluid">
+        <small>Built by <a href="https://blog.danielparnell.com" class="secondary" target="_blank">Daniel Parnell</a> •
+            <a href="https://github.com/dparnell/one-minute-maths" class="secondary" target="_blank">Source
+                code</a></small>
+    </footer>
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
